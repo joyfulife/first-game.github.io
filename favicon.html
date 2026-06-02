@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Favicon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        canvas {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .instructions {
+            text-align: left;
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic Tac Toe Favicon Generator</h1>
+    
+    <p>Right-click the image below and save as "favicon.ico" or "favicon.png"</p>
+    
+    <canvas id="faviconCanvas" width="64" height="64"></canvas>
+    
+    <div class="instructions">
+        <h3>How to add favicon to your game:</h3>
+        <ol>
+            <li>Right-click the image above and save it as "favicon.ico" or "favicon.png"</li>
+            <li>Place the file in the same folder as index.html</li>
+            <li>Add this line to the &lt;head&gt; section of index.html:<br>
+                <code>&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;</code>
+            </li>
+        </ol>
+    </div>
+    
+    <script>
+        const canvas = document.getElementById('faviconCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Draw Tic Tac Toe board favicon
+        ctx.fillStyle = '#667eea';
+        ctx.fillRect(0, 0, 64, 64);
+        
+        // Draw grid
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 3;
+        
+        // Vertical lines
+        ctx.beginPath();
+        ctx.moveTo(21, 10);
+        ctx.lineTo(21, 54);
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(43, 10);
+        ctx.lineTo(43, 54);
+        ctx.stroke();
+        
+        // Horizontal lines
+        ctx.beginPath();
+        ctx.moveTo(10, 21);
+        ctx.lineTo(54, 21);
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(10, 43);
+        ctx.lineTo(54, 43);
+        ctx.stroke();
+        
+        // Draw X in center
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 4;
+        
+        ctx.beginPath();
+        ctx.moveTo(32 - 8, 32 - 8);
+        ctx.lineTo(32 + 8, 32 + 8);
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(32 + 8, 32 - 8);
+        ctx.lineTo(32 - 8, 32 + 8);
+        ctx.stroke();
+    </script>
+</body>
+</html>

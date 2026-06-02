@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .preview-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .screenshot {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            color: white;
+        }
+        .game-preview {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .feature h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <h1>🎮 Tic Tac Toe Game Preview</h1>
+        
+        <div class="screenshot">
+            <h2>Game Features</h2>
+            <div class="game-preview">
+                <h3>Modern Tic Tac Toe Game</h3>
+                <p>A fully functional, responsive Tic Tac Toe game with:</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <h3>🎨 Beautiful UI</h3>
+                        <p>Modern gradient design with smooth animations and transitions</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🌓 Theme Toggle</h3>
+                        <p>Switch between light and dark themes with persistent preferences</p>
+                    </div>
+                    <div class="feature">
+                        <h3>📊 Score Tracking</h3>
+                        <p>Track wins for X, O, and draws across multiple games</p>
+                    </div>
+                    <div class="feature">
+                        <h3>⌨️ Keyboard Shortcuts</h3>
+                        <p>Quick controls: R=Reset, N=New Game, T=Toggle Theme, 1-9=Make move</p>
+                    </div>
+                    <div class="feature">
+                        <h3>📱 Responsive Design</h3>
+                        <p>Works perfectly on desktop, tablet, and mobile devices</p>
+                    </div>
+                    <div class="feature">
+                        <h3>💾 Local Storage</h3>
+                        <p>Saves scores and theme preferences between browser sessions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>How to Play</h2>
+        <ol>
+            <li><strong>Objective:</strong> Get 3 of your marks in a row (horizontal, vertical, or diagonal)</li>
+            <li><strong>Turns:</strong> Players alternate placing X and O on the 3x3 grid</li>
+            <li><strong>Starting Player:</strong> Player X always goes first</li>
+            <li><strong>Game End:</strong> Win when you get 3 in a row, or draw when board is full</li>
+        </ol>
+        
+        <h2>Files Created</h2>
+        <ul>
+            <li><code>index.html</code> - Main game interface</li>
+            <li><code>style.css</code> - Styling and animations</li>
+            <li><code>script.js</code> - Game logic and interactivity</li>
+            <li><code>README.md</code> - Documentation</li>
+            <li><code>run_game.bat</code> - Windows launcher</li>
+            <li><code>serve.py</code> - Python HTTP server</li>
+            <li><code>favicon.html</code> - Favicon generator</li>
+            <li><code>preview.html</code> - This preview page</li>
+        </ul>
+        
+        <div class="buttons">
+            <a href="index.html" class="btn">🎮 Play Game Now</a>
+            <a href="README.md" class="btn">📖 View Documentation</a>
+            <a href="run_game.bat" class="btn">🚀 Launch with Batch File</a>
+        </div>
+        
+        <p><strong>Note:</strong> The game is now running in your browser! You can start playing immediately.</p>
+    </div>
+</body>
+</html>
